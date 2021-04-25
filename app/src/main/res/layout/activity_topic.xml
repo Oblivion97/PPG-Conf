@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bckGround2"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:cntx="com.example.f.schMon.conf.view.TopicActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <!--app bar-->
+        <include layout="@layout/toolbar" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/confBckSpinner"
+                android:orientation="vertical">
+
+                <Spinner
+                    android:id="@+id/cSpinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="15dp"
+
+                    android:padding="2dp" />
+            </LinearLayout>
+
+
+            <ListView
+                android:id="@+id/cList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/nav_drawer_body" />
+
+
+</android.support.v4.widget.DrawerLayout>

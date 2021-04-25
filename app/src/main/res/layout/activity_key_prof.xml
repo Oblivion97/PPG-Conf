@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ColorCV"
+    tools:cntx="com.example.f.schMon.conf.view.KeyProfActivity">
+
+    <include layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Keynotspeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Ragnhild Louise Muriaas"
+            android:textAlignment="center"
+            android:textColor="@color/POName"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:layout_gravity="center" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/poImgView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/keynotespeaker" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="40dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp">
+
+
+
+
+            <TextView
+                android:id="@+id/designation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Professor
+Department of Comparative Politics
+University of Bergen
+Bergen, Norway and
+Associated Senior Researcher
+Chr. Michelsen Institute (CMI)
+"
+                android:textColor="@color/ColorTxt"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Dr. Muriaas is a renowned political scientist whose work focuses on comparative politics within the fields of women's representation, political recruitment, political decentralization and group regcognition in the Global South. Her key research interest is explaining variation in the inclusionary aspects of African regimes. She has extensive fieldexperience from Malawi, South Africa, Uganda and Zambia."
+                android:textColor="@color/ColorTxt"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confCV"
+            android:layout_marginTop="45dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/confTextCVBck"
+            android:clickable="true"
+            android:padding="3dp"
+            android:text="Show CV"
+            android:textColor="@color/confTextCV"
+            android:textStyle="italic" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+    <include layout="@layout/nav_drawer_body" />
+</android.support.v4.widget.DrawerLayout>

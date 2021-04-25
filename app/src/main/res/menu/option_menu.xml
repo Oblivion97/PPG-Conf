@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/search_menu"
+        android:icon="@drawable/ic_search_white"
+        android:title="Search"
+        android:visible="false"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/date_menu"
+        android:icon="@drawable/ic_date_range"
+        android:title="Calender"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/settings_menu"
+        android:icon="@drawable/ic_action_settings"
+        android:title="Settings"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/info_menu"
+        android:icon="@drawable/ic_info_white"
+
+        android:title="Info"
+        android:visible="false"
+        app:showAsAction="always" />
+</menu>

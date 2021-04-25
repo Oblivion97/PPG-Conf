@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/Poster"
+            android:icon="@drawable/ic_home"
+            android:state_checked="true"
+            android:title="Home" />
+        <item
+            android:id="@+id/Speakers"
+            android:icon="@drawable/ic_speakerbroadthemetic"
+            android:title="Paper Presenter" />
+        <item
+            android:id="@+id/KeyNote"
+            android:icon="@drawable/ic_keynote"
+            android:title="Key Note Speaker" />
+        <item
+            android:id="@+id/Schedule"
+            android:icon="@drawable/ic_schedule"
+            android:title="Schedule" />
+        <item
+            android:id="@+id/Map"
+            android:icon="@drawable/ic_venue"
+            android:title="Location Map" />
+
+        <item
+            android:id="@+id/Venu"
+            android:icon="@drawable/ic_venue"
+            android:title="Venue"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/Contributors"
+            android:icon="@drawable/ic_contributor"
+            android:title="Contributors" />
+        <item
+            android:id="@+id/Emergency"
+            android:icon="@drawable/ic_contributor"
+            android:title="Emergency Contact Number" />
+        <item
+            android:id="@+id/AboutUS"
+            android:icon="@drawable/ic_about"
+            android:title="About Us" />
+
+
+        <item
+            android:id="@+id/CodexUnicorn"
+            android:icon="@drawable/ic_about"
+            android:title="About Us 2"
+            android:visible="false" />
+
+
+        <item
+            android:id="@+id/SpeakerTopic"
+            android:icon="@drawable/ic_speakerbroadthemetic"
+            android:title="Speakers | Broad Thematic Topic"
+            android:visible="false" />
+        <item
+            android:id="@+id/SpeakerCountry"
+            android:icon="@drawable/ic_speakerbroadthemetic"
+            android:title="Speakers | Country &amp; Theme "
+            android:visible="false" />
+
+    </group>
+
+</menu>

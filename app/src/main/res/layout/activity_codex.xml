@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bckgrnd"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="455dp" />
+
+    <View
+        android:id="@+id/nsu"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/codex"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="19dp"
+        android:layout_marginLeft="105dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <View
+        android:id="@+id/codex"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="105dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</RelativeLayout>

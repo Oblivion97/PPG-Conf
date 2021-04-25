@@ -1,0 +1,9 @@
+android {
+    signingConfigs {
+        config {
+            keyAlias 'codexunicorn2'
+            keyPassword 'fsfsdfb#%$$^'
+            storeFile file('C:/Users/FA/Videos/PROJECT/Conference/codexunicornkey.jks')
+            storePassword 'cvds#%edgdsg'
+        }
+    }

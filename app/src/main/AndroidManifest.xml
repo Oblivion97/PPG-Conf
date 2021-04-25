@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.f.schMon">
+
+    <uses-sdk
+        android:maxSdkVersion="26"
+        android:minSdkVersion="20"
+        android:targetSdkVersion="26" />
+    <!-- =================  permissions  ======================= -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".conf.model.A"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/MirTheme.NoActionBar">
+        <activity
+            android:name=".conf.view.SplashScreenConf"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".conf.view.DashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.SpeakerActivity"
+            android:label="Speakers &amp; Topics"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".conf.view.TopicActivity"
+            android:label="Speakers &amp; Topics"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.CountryActivity"
+            android:label="Country-wise Speakers"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.ContribActivity"
+            android:label="Contributors"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.ScheduleActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.model.StartingActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.VenueActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.CodexAcitvity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.view.KeyProfActivity"
+            android:label="Key Note Speaker"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:theme="@style/MirTheme.NoActionBar" />
+        <activity
+            android:name=".conf.model.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity
+            android:name=".conf.view.CVActivity"
+            android:label="CV"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".conf.view.WebActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBqhqjeyFva6Odi27C1i2u34ArG0l05KzI" />
+
+        <activity
+            android:name=".conf.view.MapActivity"
+            android:label="@string/title_activity_maps"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".conf.view.EmergencyActivity"
+            android:label=" Emergency Contact"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".conf.view.AboutActivity"
+            android:label="About"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" />
+        <activity android:name=".conf.view.AboutActivity2" />
+        <activity android:name=".conf.view.EmergencyActivity2"></activity>
+    </application>
+
+</manifest>
